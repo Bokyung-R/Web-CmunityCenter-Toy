@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="term.css">
+    <title>Document</title>
+</head>
+
+<body class="homepage">
+    <h1 class="title">
+        <사하 문화센터>
+    </h1>
+    <div id="part1">
+        <h2>로그인, 회원가입</h2>
+        <div id="login" class="login">
+            <fieldset>
+                <legend>로그인</legend>
+                <p>
+                    <label for="user_id">ID &nbsp</label>
+                    <input type="text" name="user_id" id="user_id">
+                </p>
+                <p>
+                    <label for="user_pw">PW</label>
+                    <input type="password" name="user_pw" id="user_pw">
+                </p>
+                <p>
+                    <button onclick="login_btn()">로그인</button>
+                </p>
+            </fieldset>
+        </div>
+
+        <div id="setup" class="setup">
+            <form name="f1">
+                <fieldset>
+                    <legend>회원 가입</legend>
+                    <p>
+                        <label for="setup_id">ID &nbsp</label>
+                        <input type="text" name="setup_id" id="setup_id">
+                        <input type="button" onclick="id_check();" value="중복체크"> <br>
+                        <span id="checkcom" style="color:green"></span>
+                    </p>
+                    <p>
+                        <label for="setup_pw">PW</label>
+                        <input type="password" name="setup_pw" id="setup_pw">
+                    </p>
+                    <span style="font-size:12px;color: red;">*아이디: 5~20자 , 영문, 숫자를 포함해야합니다.</span><br>
+                    <span style="font-size:12px;color: red;">*비밀번호: 5~16자, 영문, 숫자, 특수문자(!,@,^,*)가 포함되어야합니다.</span><br>
+                    <p>
+                        <input type="button" onclick="submitForm();" value="회원가입">
+                        <input type="reset" value="가입취소">
+                    </p>
+                </fieldset>
+            </form><br>
+        </div>
+        <p></p>
+        <hr>
+        <p></p>
+
+        <div id="container">
+            <h3 id="heading">프로그램 소개</h3>
+            <div id="prod-pic">
+                <img src="./img/yoga.jpg" alt="요가" id="pic_program" width="350" height="350">
+                <div id="small-pic">
+                    <img src="./img/yoga.jpg" class="small">
+                    <img src="./img/pilates.jpg" class="small">
+                    <img src="./img/health.jpg" class="small">
+                    <img src="./img/badminton.jpg" class="small">
+                    <img src="./img/tennis.jpg" class="small">
+                    <img src="./img/swim.jpg" class="small">
+                </div>
+            </div>
+            
+            <div id="desc">
+                <ul>
+                    <li>센터명 : 사하 문화센터</li>
+                    <li class="bluetext"> 진행중인 프로그램 : 요가, 필라테스, 헬스, 배드민턴, 테니스, 수영 </li>
+                    <li>진행 시간 : 상세 설명 참고</li>
+                    <li>가격 : 상세 설명 참고</li>
+                    <li class="bluetext"> 모든 프로그램은 평일(월~금) 진행입니다.</li>
+                    <li class="graytext"> 사진 출처 : 나무위키</li>
+                </ul>
+                <a href="#" id="view">상세 설명 보기</a>
+            </div>
+            
+            
+            <hr>
+            <p></p>
+            <div id="detail">
+                <h2>프로그램 상세 정보</h2>
+                <table border="1">
+                    <th>프로그램명</th>
+                    <th>운영 시간</th>
+                    <th>강사명</th>
+                    <th>운영 장소</th>
+                    <th>프로그램 가격</th>
+    
+                    <tr>
+                        <td rowspan="2">요가</td>
+                        <td>오전 09:00 - 10:30</td>
+                        <td rowspan="2">김요가</td>
+                        <td rowspan="2">s0101</td>
+                        <td rowspan="2">50000원</td>
+                    <tr>
+                        <td>오전 11:00 - 12:30</td>
+                    <tr>
+                        <td rowspan="2">필라테스</td>
+                        <td>오전 09:00 - 10:30</td>
+                        <td rowspan="2">필라희</td>
+                        <td rowspan="2">s0102</td>
+                        <td rowspan="2">50000원</td>
+                    <tr>
+                        <td>오후 18:00 - 19:30</td>
+                    <tr>
+                        <td>헬스</td>
+                        <td>자유</td>
+                        <td>지정 강사 없음</td>
+                        <td>s0301</td>
+                        <td>25000원</td>
+                    <tr>
+                        <td rowspan="2">배드민턴</td>
+                        <td>오후 13:00 - 15:00</td>
+                        <td rowspan="2">턴</td>
+                        <td rowspan="2">s0211</td>
+                        <td rowspan="2">25000원</td>
+                    <tr>
+                        <td>오후 16:00 - 18:00</td>
+                    <tr>
+                        <td rowspan="2">테니스</td>
+                        <td>오후 17:00 - 18:30</td>
+                        <td rowspan="2">테니</td>
+                        <td rowspan="2">s0212</td>
+                        <td rowspan="2">30000원</td>
+                    <tr>
+                        <td>오후 19:00 - 20:30</td>
+                    <tr>
+                        <td rowspan="2">수영</td>
+                        <td>오전 09:00 - 10:00</td>
+                        <td rowspan="2">마린</td>
+                        <td rowspan="2">h0102</td>
+                        <td rowspan="2">60000원</td>
+                    </tr>
+                    <tr>
+                        <td>오전 11:00 - 12:00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="QA">
+            <h2>문의 게시판</h2>
+            <input type="text" id="qaInput" placeholder="질문을 입력하세요" size="50">
+            <button onclick="addQuestion()">질문 등록하기</button>
+            <p></p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>질문</th>
+                        <th>답변</th>
+                    </tr>
+                </thead>
+                <tbody id="qaTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------->
+    <div id="part2" style="display: none;">
+        <h2>관리자 모드 화면입니다.</h2>
+        <div id="user_manage">
+            <h3>회원 정보</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>아이디</th>
+                        <th>비밀번호</th>
+                    </tr>
+                </thead>
+                <tbody id="user_list"></tbody>
+            </table>
+            <hr>
+
+            <h3>회원별 신청 프로그램</h3>
+            <div id="selectWrapper">
+                <select name="users_pro" id="users_pro">
+                    <option value="" selected>-- 선택 --</option>
+                </select>
+                &nbsp
+                <button onclick="before_watch();">신청 프로그램 보기</button>
+                &nbsp
+                <select name="add_pro" id="add_pro">
+                    <option value="" selected>-- 선택 --</option>
+                    <option value="apply1">요가01</option>
+                    <option value="apply2">요가02</option>
+                    <option value="apply3">필라테스01</option>
+                    <option value="apply4">필라테스02</option>
+                    <option value="apply5">헬스</option>
+                    <option value="apply6">배드민턴01</option>
+                    <option value="apply7">배드민턴02</option>
+                    <option value="apply8">테니스01</option>
+                    <option value="apply9">테니스02</option>
+                    <option value="apply10">수영01</option>
+                    <option value="apply11">수영02</option>
+
+                </select>
+                &nbsp
+                <button onclick="add_program();">프로그램 추가하기</button>
+            </div>
+            <p></p>
+
+            <table border="1" class="usertable">
+                <thead>
+                    <tr>
+                        <th>프로그램명</th>
+                        <th>운영 시간</th>
+                        <th>강사명</th>
+                        <th>운영 장소</th>
+                        <th>프로그램 삭제</th>
+                    </tr>
+                </thead>
+                <tbody id="user_programs"></tbody>
+            </table>
+        </div>
+        <p></p>
+        <hr>
+        <p></p>
+        <h2>문의 게시판 답변하기</h2>
+        <div id="qaanswer">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>질문</th>
+                        <th>답변</th>
+                        <th>등록하기</th>
+                    </tr>
+                </thead>
+                <tbody id="qaanswerbody"></tbody>
+            </table>
+        </div>
+        <p></p>
+
+        <div style="text-align:center">
+            <button onclick="home()">로그인페이지로</button>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------->
+
+    <div id="part3" style="display: none;">
+        <div id="apply">
+            <h2>진행되고 있는 프로그램 목록</h2>
+            <table border="1">
+                <th>프로그램명</th>
+                <th>운영 시간</th>
+                <th>강사명</th>
+                <th>운영 장소</th>
+                <th>프로그램 신청</th>
+
+                <tr>
+                    <td rowspan="2">요가</td>
+                    <td>오전 09:00 - 10:30</td>
+                    <td rowspan="2">김요가</td>
+                    <td rowspan="2">s0101</td>
+                    <td><button onclick="apply1(loginID)">신청</button></td>
+                <tr>
+                    <td>오전 11:00 - 12:30</td>
+                    <td><button onclick="apply2(loginID)">신청</button></td>
+                <tr>
+                    <td rowspan="2">필라테스</td>
+                    <td>오전 09:00 - 10:30</td>
+
+                    <td rowspan="2">필라희</td>
+                    <td rowspan="2">s0102</td>
+                    <td><button onclick="apply3(loginID)">신청</button></td>
+                <tr>
+                    <td>오후 18:00 - 19:30</td>
+                    <td><button onclick="apply4(loginID)">신청</button></td>
+                <tr>
+                    <td>헬스</td>
+                    <td>자유</td>
+                    <td>지정 강사 없음</td>
+                    <td>s0301</td>
+                    <td><button onclick="apply5(loginID)">신청</button></td>
+                <tr>
+                    <td rowspan="2">배드민턴</td>
+                    <td>오후 13:00 - 15:00</td>
+                    <td rowspan="2">턴</td>
+                    <td rowspan="2">s0211</td>
+                    <td><button onclick="apply6(loginID)">신청</button></td>
+                <tr>
+                    <td>오후 16:00 - 18:00</td>
+                    <td><button onclick="apply7(loginID)">신청</button></td>
+                <tr>
+                    <td rowspan="2">테니스</td>
+                    <td>오후 17:00 - 18:30</td>
+                    <td rowspan="2">테니</td>
+                    <td rowspan="2">s0212</td>
+                    <td><button onclick="apply8(loginID)">신청</button></td>
+                <tr>
+                    <td>오후 19:00 - 20:30</td>
+                    <td><button onclick="apply9(loginID)">신청</button></td>
+                <tr>
+                    <td rowspan="2">수영</td>
+                    <td>오전 09:00 - 10:00</td>
+                    <td rowspan="2">마린</td>
+                    <td rowspan="2">h0102</td>
+                    <td><button onclick="apply10(loginID)">신청</button></td>
+                </tr>
+                <tr>
+                    <td>오전 11:00 - 12:00</td>
+                    <td><button onclick="apply11(loginID)">신청</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="applied_programs">
+            <h3> 신청한 프로그램</h3>
+            <table border="1" class="usertable">
+                <thead>
+                    <tr>
+                        <th>프로그램명</th>
+                        <th>운영 시간</th>
+                        <th>강사명</th>
+                        <th>운영 장소</th>
+                        <th>프로그램 취소</th>
+                    </tr>
+                </thead>
+                <tbody id="myprogram"></tbody>
+            </table>
+        </div>
+        <p></p>
+        <div style="text-align:center">
+            <button onclick="home()">로그인페이지로</button>
+        </div>
+    </div>
+
+    <script src="term.js"></script>
+</body>
+
+</html>

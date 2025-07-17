@@ -1,0 +1,105 @@
+.title{
+    background-color: rgb(255, 224, 224);
+    text-align: center
+}
+
+.homepage{
+    background-color: aliceblue;
+}
+
+#part1{
+    padding-left:20px
+}
+#part2{
+    padding-left:20px
+}
+#part3{
+    padding-left:20px
+}
+
+#detail{
+    padding-bottom: 30px;
+}
+
+table{
+    text-align:center; width:98%;
+}
+
+.bluetext {
+    color:#4343ff;
+    font-weight:bold;
+}
+
+.graytext {
+    color:#b0b0ffcc;
+}
+
+.usertable{
+    background-color: whitesmoke;
+    text-align:center; width:98%;
+}
+
+.setup{
+    float: left; width:500px;
+}
+
+.login{
+    float: left; width:400px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+fieldset{
+    margin: 0 auto; 
+    text-align: left;
+
+}
+#container { 
+    width:1000px;
+}
+#prod-pic, #desc { 
+    float:left;
+}
+#prod-pic { 			
+    margin:20px 20px auto 10px;
+    padding:0;
+}
+
+#small-pic {
+    margin-top:20px;
+    list-style: none;
+    padding:0;			
+}
+#small-pic > li {
+    float:left;
+    margin-right:10px;
+}
+.small {
+    width:60px;
+    height:60px;
+}
+#small-pic img:hover {
+    cursor:pointer;
+}		
+#desc {  
+    padding-top:20px;
+    margin-bottom:50px;
+}
+
+hr{
+    clear:both;
+    border:1px dashed #c9dbff;
+}
+#detail {
+    padding-top:10px;
+    display:none;
+}
+#detail li {
+    font-size:0.9em;
+    line-height:1.4;
+}
+p { 
+    font-size:0.9em;
+    line-height:1.4;
+    text-align: justify;
+}
